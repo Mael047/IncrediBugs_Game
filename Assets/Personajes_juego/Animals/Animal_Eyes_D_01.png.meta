@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 8f9f9ce31319a2c459393dc576e0ef22
+guid: 72017440e3e444a4eb4f0ecc22d9753a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5321627474576597599
-    second: Animal_Mouth_00_0
+      213: -5703505537210631513
+    second: Animal_Eyes_D_01_0
+  - first:
+      213: -6776851512730642884
+    second: Animal_Eyes_D_01_1
+  - first:
+      213: -1667174890774210041
+    second: Animal_Eyes_D_01_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,53 +102,71 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Animal_Mouth_00
+      name: Animal_Eyes_D_01_0
       rect:
         serializedVersion: 2
-        x: 468
-        y: 536
-        width: 89
-        height: 69
+        x: 479
+        y: 574
+        width: 200
+        height: 161
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f52e8113ef73ad940800000000000000
-      internalID: 5321627474576597599
+      spriteID: 7aa3610bee319d0b0800000000000000
+      internalID: -5703505537210631513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animal_Eyes_D_01_1
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 733
+        width: 57
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c361f185479c3f1a0800000000000000
+      internalID: -6776851512730642884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animal_Eyes_D_01_2
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 600
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ad3f815410dd8e0800000000000000
+      internalID: -1667174890774210041
       vertices: []
       indices: 
       edges: []
@@ -151,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9501eec6fea1e7d4295fcea29eff2fc6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Animal_Mouth_00: 5321627474576597599
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

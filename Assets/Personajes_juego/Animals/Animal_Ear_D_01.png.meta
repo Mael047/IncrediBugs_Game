@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 132c131cad94c294797411e921d4c556
+guid: 7adc8056eb007f34fb47d41267a7dd0d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 965604893987049919
-    second: Animal_00_0
+      213: 859443731073747876
+    second: Animal_Ear_D_01_0
+  - first:
+      213: 7725176207974221850
+    second: Animal_Ear_D_01_1
+  - first:
+      213: -6176379578253344717
+    second: Animal_Ear_D_01_2
+  - first:
+      213: 6158949037775115675
+    second: Animal_Ear_D_01_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +105,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Animal_00_0
+      name: Animal_Ear_D_01_0
       rect:
         serializedVersion: 2
-        x: 231
-        y: 71
-        width: 563
-        height: 868
+        x: 363
+        y: 735
+        width: 8
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb11a7bf884866d00800000000000000
-      internalID: 965604893987049919
+      spriteID: 4ab4617158b5deb00800000000000000
+      internalID: 859443731073747876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animal_Ear_D_01_1
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 701
+        width: 250
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a184a97d4d6553b60800000000000000
+      internalID: 7725176207974221850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animal_Ear_D_01_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 718
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3308b385f77194aa0800000000000000
+      internalID: -6176379578253344717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animal_Ear_D_01_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 712
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95d152b48bf87550800000000000000
+      internalID: 6158949037775115675
       vertices: []
       indices: 
       edges: []
@@ -160,8 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Animal_00_0: 965604893987049919
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
