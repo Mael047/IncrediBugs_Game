@@ -138,28 +138,6 @@ TextureImporter:
       name: Animal_Ear_D_01
       rect:
         serializedVersion: 2
-        x: 363
-        y: 735
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4ab4617158b5deb00800000000000000
-      internalID: 859443731073747876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Animal_Ear_D_01_1
-      rect:
-        serializedVersion: 2
         x: 538
         y: 701
         width: 250
@@ -178,50 +156,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Animal_Ear_D_01_2
-      rect:
-        serializedVersion: 2
-        x: 340
-        y: 718
-        width: 10
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3308b385f77194aa0800000000000000
-      internalID: -6176379578253344717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Animal_Ear_D_01_3
-      rect:
-        serializedVersion: 2
-        x: 354
-        y: 712
-        width: 14
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b95d152b48bf87550800000000000000
-      internalID: 6158949037775115675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -236,8 +170,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Animal_Ear_D_01: 859443731073747876
-      Animal_Ear_D_01_1: 7725176207974221850
+      Animal_Ear_D_01: 7725176207974221850
       Animal_Ear_D_01_2: -6176379578253344717
       Animal_Ear_D_01_3: 6158949037775115675
   mipmapLimitGroupName: 

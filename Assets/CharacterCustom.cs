@@ -22,6 +22,7 @@ public class CharacterCustom : MonoBehaviour
         }
 
         HeadParts.sprite = Options[CurrentOption];
+ 
     }
 
     public void PreviousOption()
@@ -33,6 +34,7 @@ public class CharacterCustom : MonoBehaviour
         }
 
         HeadParts.sprite = Options[CurrentOption];
+    
     }
 
 
