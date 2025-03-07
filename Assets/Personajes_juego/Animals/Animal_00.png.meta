@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8f627ff7a2730004ea1277dc198c9204
+guid: 132c131cad94c294797411e921d4c556
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 109149186995098608
-    second: Animal_Head_00_0
+      213: 965604893987049919
+    second: Animal_00_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Animal_Head_00_0
+      name: Animal_00_0
       rect:
         serializedVersion: 2
-        x: 298
-        y: 494
-        width: 429
-        height: 342
+        x: 231
+        y: 71
+        width: 563
+        height: 868
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f39d567b96c38100800000000000000
-      internalID: 109149186995098608
+      spriteID: fb11a7bf884866d00800000000000000
+      internalID: 965604893987049919
       vertices: []
       indices: 
       edges: []
