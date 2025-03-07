@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Animal_Body_00_0
+      name: Animal_Body_00
       rect:
         serializedVersion: 2
         x: 349
@@ -134,7 +134,7 @@ TextureImporter:
         width: 327
         height: 404
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d47beff4868371d41a514c92e887be28
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Animal_Body_00_0: -6003965334887604662
+      Animal_Body_00: -6003965334887604662
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

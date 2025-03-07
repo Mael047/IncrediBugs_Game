@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Animal_Mouth_00_0
+      name: Animal_Mouth_00
       rect:
         serializedVersion: 2
         x: 468
@@ -134,7 +134,7 @@ TextureImporter:
         width: 89
         height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9501eec6fea1e7d4295fcea29eff2fc6
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Animal_Mouth_00_0: 5321627474576597599
+      Animal_Mouth_00: 5321627474576597599
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

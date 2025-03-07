@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: c1217e1ec33877c48914f72cbf777c01
+guid: c3d9cb3d77090ad43a53745d3f807cc7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4860373917287947077
-    second: Animal_Eyes_00_0
-  - first:
-      213: -5313408096624961134
-    second: Animal_Eyes_00_1
+      213: -5721326183785951698
+    second: Animal_Mouth_01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,45 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Animal_Eyes_00_0
+      name: Animal_Mouth_01
       rect:
         serializedVersion: 2
-        x: 356
-        y: 586
-        width: 148
-        height: 159
+        x: 481
+        y: 548
+        width: 63
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb46a707cab7c8cb0800000000000000
-      internalID: -4860373917287947077
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Animal_Eyes_00_1
-      rect:
-        serializedVersion: 2
-        x: 521
-        y: 586
-        width: 148
-        height: 159
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2991cfddc7bf246b0800000000000000
-      internalID: -5313408096624961134
+      spriteID: e2e0c431624c990b0800000000000000
+      internalID: -5721326183785951698
       vertices: []
       indices: 
       edges: []
@@ -176,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c4da40a4a23e2154a952ecd29726f6c2
     internalID: 0
     vertices: []
     indices: 
@@ -186,8 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Animal_Eyes_00_0: -4860373917287947077
-      Animal_Eyes_00_1: -5313408096624961134
+      Animal_Mouth_01: -5721326183785951698
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

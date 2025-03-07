@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Animal_Leg_I_00_0
+      name: Animal_Leg_I_00
       rect:
         serializedVersion: 2
         x: 375
@@ -134,7 +134,7 @@ TextureImporter:
         width: 120
         height: 203
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7e65b2df872be104385935b1576dc34b
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Animal_Leg_I_00_0: -4176360331807349872
+      Animal_Leg_I_00: -4176360331807349872
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
