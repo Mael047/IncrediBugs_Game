@@ -10,6 +10,7 @@ public class CharacterCustom : MonoBehaviour
     [Header("Sprites ciclicos")]
     public List<Sprite> Options = new List<Sprite>();
 
+
     private int CurrentOption = 0;
 
 
@@ -32,11 +33,7 @@ public class CharacterCustom : MonoBehaviour
         {
             CurrentOption = Options.Count - 1;
         }
-
         HeadParts.sprite = Options[CurrentOption];
-    
     }
-
-
 }
 

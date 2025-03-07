@@ -1,30 +1,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterCustomTwoParts: MonoBehaviour
+public class CharacterCustomTwoParts : MonoBehaviour
 {
 
-    [Header("Sprites a cambiar")]
+    [Header("Sprites Player")]
     public SpriteRenderer HeadPartsDer;
     public SpriteRenderer HeadPartsIzq;
 
-    [Header("Sprites ciclicos")]
+    [Header("Lista de Sprites ")]
     public List<Sprite> OptionsDer = new List<Sprite>();
     public List<Sprite> OptionsIzq = new List<Sprite>();
 
     private int CurrentOption = 0;
 
-
     public void NextOption()
     {
         CurrentOption++;
-        if (CurrentOption >= OptionsDer.Count )
+        if (CurrentOption >= OptionsDer.Count)
         {
             CurrentOption = 0;
         }
 
         HeadPartsDer.sprite = OptionsDer[CurrentOption];
-        HeadPartsIzq.sprite = OptionsIzq[CurrentOption];   
+        HeadPartsIzq.sprite = OptionsIzq[CurrentOption];
     }
 
     public void PreviousOption()
@@ -32,15 +31,11 @@ public class CharacterCustomTwoParts: MonoBehaviour
         CurrentOption--;
         if (CurrentOption <= 0)
         {
-            CurrentOption = OptionsDer.Count - 1 ;
-            CurrentOption = OptionsIzq.Count - 1;
+            CurrentOption = OptionsDer.Count - 1;
         }
-
-        HeadPartsDer.sprite = OptionsDer[CurrentOption]; 
-        HeadPartsIzq.sprite = OptionsIzq[CurrentOption];   
-
+        HeadPartsDer.sprite = OptionsDer[CurrentOption];
+        HeadPartsIzq.sprite = OptionsIzq[CurrentOption];
     }
-
 
 }
 
