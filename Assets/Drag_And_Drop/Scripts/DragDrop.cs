@@ -1,8 +1,5 @@
-using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
 using UnityEngine.EventSystems;
-
 
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
@@ -10,11 +7,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
 
-
-    
     [Header("Banderas")]
     public string SelectedFlag;
-
 
     private void Awake()
     {
@@ -24,8 +18,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     private void Start()
     {
-
-        Debug.Log("Esta es la siguiente bandera " + SelectedFlag);
+        Debug.Log("La Bandera Seleccionada es" + SelectedFlag);
     }
 
     public string GetFlag()
@@ -33,9 +26,9 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         return SelectedFlag;
     }
 
-    public string SetFlag(string flag) {
+    public void SetFlag(string flag)
+    {
         SelectedFlag = flag;
-        return SelectedFlag;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -62,5 +55,4 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         Debug.Log("OnPointerDown");
     }
-
 }
