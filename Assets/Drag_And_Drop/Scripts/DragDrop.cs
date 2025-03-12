@@ -15,6 +15,13 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     [Header("Banderas")]
     public string SelectedFlag;
 
+
+    private void Awake()
+    {
+        rectTransform = GetComponent<RectTransform>();
+        canvasGroup = GetComponent<CanvasGroup>();
+    }
+
     private void Start()
     {
 
@@ -29,12 +36,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     public string SetFlag(string flag) {
         SelectedFlag = flag;
         return SelectedFlag;
-    }
-
-    private void Awake()
-    {
-        rectTransform = GetComponent<RectTransform>();
-        canvasGroup = GetComponent<CanvasGroup>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)

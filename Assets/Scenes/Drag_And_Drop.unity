@@ -641,6 +641,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1784436549}
     m_Modifications:
+    - target: {fileID: 3927856751988316383, guid: 83fa05b488dbb4e42b0122928bf3e41a, type: 3}
+      propertyPath: FlagInSlot
+      value: Ecuador
+      objectReference: {fileID: 0}
     - target: {fileID: 4220322017648819971, guid: 83fa05b488dbb4e42b0122928bf3e41a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

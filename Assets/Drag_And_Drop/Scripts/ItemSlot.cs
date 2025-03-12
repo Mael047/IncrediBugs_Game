@@ -1,19 +1,14 @@
-using NUnit.Framework;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+
 public class ItemSlot : MonoBehaviour, IDropHandler
 {
-
-    DragDrop Bandera;
-
     [Header("Banderas De este Slot")]
     public string FlagInSlot;
+
     private void Start()
     {
-        Bandera = new DragDrop();
-        Bandera.SetFlag(FlagInSlot);
-        Debug.Log("La Bandera que debe ir en este slot es " + Bandera.GetFlag());
+        Debug.Log("La Bandera que debe ir en este slot es " + FlagInSlot);
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -21,7 +16,20 @@ public class ItemSlot : MonoBehaviour, IDropHandler
         Debug.Log("OnDrop");
         if (eventData.pointerDrag != null)
         {
-            eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+            DragDrop banderaArrastrada = eventData.pointerDrag.GetComponent<DragDrop>();
+            if (banderaArrastrada != null)
+            {
+                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+
+                if (FlagInSlot == banderaArrastrada.GetFlag())
+                {
+                    Debug.Log("Correcto");
+                }
+                else
+                {
+                    Debug.Log("Incorrecto");
+                }
+            }
         }
     }
 }
