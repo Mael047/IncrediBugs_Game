@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class CharacterCreationmenu : MonoBehaviour
 {
 
-    public GameObject character;
+   public GameObject character;
+
    public void Sumbit()
    {
         PrefabUtility.SaveAsPrefabAsset(character, "Assets/Player.prefab");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
    }
 }
