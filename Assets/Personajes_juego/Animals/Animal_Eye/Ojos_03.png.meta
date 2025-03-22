@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 72017440e3e444a4eb4f0ecc22d9753a
+guid: da05c3734935e6a4bb096af1adfbb941
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5703505537210631513
-    second: Animal_Eyes_D_01_0
+      213: 7973940444237701117
+    second: Ojos_03_0
   - first:
-      213: -6776851512730642884
-    second: Animal_Eyes_D_01_1
-  - first:
-      213: -1667174890774210041
-    second: Animal_Eyes_D_01_2
+      213: 8930102789148543187
+    second: Ojos_03_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -102,53 +99,49 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Animal_Eyes_D_01
+      name: Ojos_03_0
       rect:
         serializedVersion: 2
-        x: 479
-        y: 574
-        width: 200
-        height: 161
+        x: 372
+        y: 568
+        width: 111
+        height: 164
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7aa3610bee319d0b0800000000000000
-      internalID: -5703505537210631513
+      spriteID: dff98e6169029ae60800000000000000
+      internalID: 7973940444237701117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos_03_1
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 568
+        width: 111
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d88cea4c291eeb70800000000000000
+      internalID: 8930102789148543187
       vertices: []
       indices: 
       edges: []
@@ -157,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 59dc566ff45a4e342b4040a84aa394f6
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -167,9 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Animal_Eyes_D_01: -5703505537210631513
-      Animal_Eyes_D_01_1: -6776851512730642884
-      Animal_Eyes_D_01_2: -1667174890774210041
+      Ojos_03_0: 7973940444237701117
+      Ojos_03_1: 8930102789148543187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

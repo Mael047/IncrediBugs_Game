@@ -10,10 +10,14 @@ public class CharacterCustom : MonoBehaviour
     [Header("Sprites ciclicos")]
     public List<Sprite> Options = new List<Sprite>();
 
+    [Header("Colores")]
+    public Color[] colores;
+    public Queue<Color> QueueColor = new Queue<Color>();
+    public SpriteRenderer spriteRenderer;
 
     private int CurrentOption = 0;
 
-
+    //Script para botones 
     public void NextOption()
     {
         CurrentOption++;
@@ -25,7 +29,6 @@ public class CharacterCustom : MonoBehaviour
         HeadParts.sprite = Options[CurrentOption];
  
     }
-
     public void PreviousOption()
     {
         CurrentOption--;
@@ -34,6 +37,21 @@ public class CharacterCustom : MonoBehaviour
             CurrentOption = Options.Count - 1;
         }
         HeadParts.sprite = Options[CurrentOption];
+    }
+
+    //parte de colores
+    public void Start()
+    {
+        foreach (Color c in colores)
+        {
+            QueueColor.Enqueue(c);
+        }
+    }
+    public void NextColor()
+    {
+        Color c = QueueColor.Dequeue();
+        spriteRenderer.color = c;
+        QueueColor.Enqueue(c);
     }
 }
 
