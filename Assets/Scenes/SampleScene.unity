@@ -436,6 +436,7 @@ GameObject:
   - component: {fileID: 1784436548}
   - component: {fileID: 1784436547}
   - component: {fileID: 1784436546}
+  - component: {fileID: 1784436550}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -527,6 +528,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1784436550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784436545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09497ba7ef9c83c41b7e4fc80ce99f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1795706524 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7447491476444953765, guid: 24917105716f8ee4b83a1f61b8e4dd4f, type: 3}
@@ -606,11 +619,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7447491476444953765, guid: 24917105716f8ee4b83a1f61b8e4dd4f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -412
+      value: -340
       objectReference: {fileID: 0}
     - target: {fileID: 7447491476444953765, guid: 24917105716f8ee4b83a1f61b8e4dd4f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 143
+      value: 124
       objectReference: {fileID: 0}
     - target: {fileID: 7447491476444953765, guid: 24917105716f8ee4b83a1f61b8e4dd4f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -641,6 +654,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1784436549}
     m_Modifications:
+    - target: {fileID: 3927856751988316383, guid: 83fa05b488dbb4e42b0122928bf3e41a, type: 3}
+      propertyPath: pointsFlags
+      value: 
+      objectReference: {fileID: 1784436550}
     - target: {fileID: 4220322017648819971, guid: 83fa05b488dbb4e42b0122928bf3e41a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -724,6 +741,14 @@ PrefabInstance:
     - target: {fileID: 7279485401359920705, guid: 83fa05b488dbb4e42b0122928bf3e41a, type: 3}
       propertyPath: m_Name
       value: Slot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279485401359920705, guid: 83fa05b488dbb4e42b0122928bf3e41a, type: 3}
+      propertyPath: m_TagString
+      value: Slot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279485401359920705, guid: 83fa05b488dbb4e42b0122928bf3e41a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

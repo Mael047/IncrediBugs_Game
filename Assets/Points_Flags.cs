@@ -7,15 +7,17 @@ public class Points_Flags : MonoBehaviour
     private int Points = 0;
     private int MaxPoints = 0;
 
-    void start()
+    void Start()
     {
         Points = 0;
-        MaxPoints = GameObject.FindGameObjectsWithTag("ItemSlot").Length;
+        MaxPoints = GameObject.FindGameObjectsWithTag("Slot").Length;
+        Debug.Log(MaxPoints);
     }
 
     public void AddPoint()
     {
         Points++;
+        Debug.Log(Points);  
         if (Points == MaxPoints)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -28,7 +30,7 @@ public class Points_Flags : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         if (Points == MaxPoints)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("Completado");
         }
 
     }

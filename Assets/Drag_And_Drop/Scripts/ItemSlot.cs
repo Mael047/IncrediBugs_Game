@@ -3,6 +3,9 @@ using UnityEngine.EventSystems;
 
 public class ItemSlot : MonoBehaviour, IDropHandler
 {
+
+    public Points_Flags pointsFlags;
+
     [Header("Banderas De este Slot")]
     public string FlagInSlot;
 
@@ -24,6 +27,8 @@ public class ItemSlot : MonoBehaviour, IDropHandler
                     Debug.Log("Correcto");
                     eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
                     banderaArrastrada.transform.SetParent(transform);
+                    pointsFlags.AddPoint();
+
                 }
                 else if(FlagInSlot != banderaArrastrada.GetFlag()) // En caso de que el item sea incorrecto lo regresa a su posición original
                 {
