@@ -19,15 +19,16 @@ public class ItemSlot : MonoBehaviour, IDropHandler
             DragDrop banderaArrastrada = eventData.pointerDrag.GetComponent<DragDrop>();
             if (banderaArrastrada != null)
             {
-                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-
-                if (FlagInSlot == banderaArrastrada.GetFlag())
+                if (FlagInSlot == banderaArrastrada.GetFlag()) // EN caso de que el item sea correcto ajusta su posición y lo deja en el slot   
                 {
                     Debug.Log("Correcto");
+                    eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+                    banderaArrastrada.transform.SetParent(transform);
                 }
-                else
+                else if(FlagInSlot != banderaArrastrada.GetFlag()) // En caso de que el item sea incorrecto lo regresa a su posición original
                 {
                     Debug.Log("Incorrecto");
+                    banderaArrastrada.ReturnToOriginalPosition();
                 }
             }
         }
