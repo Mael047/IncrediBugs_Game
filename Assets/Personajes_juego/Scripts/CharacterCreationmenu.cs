@@ -11,6 +11,6 @@ public class CharacterCreationmenu : MonoBehaviour
    public void Sumbit()
    {
         PrefabUtility.SaveAsPrefabAsset(character, "Assets/Player.prefab");
-        SceneManager.LoadScene(0);
-   }
+        TransicionEscenasUI.Instance.BloqueSalida(1);
+    }
 }
