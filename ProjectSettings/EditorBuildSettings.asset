@@ -6,14 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu_Principal.unity
+    path: Assets/Scenes/Menus/Menu_Principal.unity
     guid: cccf55827e5c2824395e10650cdc7a0d
   - enabled: 1
-    path: Assets/Scenes/Menu_Temas.unity
+    path: Assets/Scenes/Menus/Menu_Temas.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Custom_Character.unity
+    path: Assets/Scenes/Menus/Custom_Character.unity
     guid: d36665059b65536469aa2ccb866d2a22
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 2d599a9edae5f614a940e8308f92d03d, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 65b13ba5b7d79e1428d36b335d492dc0, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
