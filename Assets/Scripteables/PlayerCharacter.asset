@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2e9c40433e381419f992de8b3cf9ec, type: 3}
+  m_Name: PlayerCharacter
+  m_EditorClassIdentifier: 
+  <Data>k__BackingField:
+  - <Type>k__BackingField: {fileID: 11400000, guid: 827a17852ef7a4641b35adfa5d674db3, type: 2}
+    <Sprite>k__BackingField:
+      <Sprite>k__BackingField: {fileID: 2137721569, guid: d9692ae2f5873c84796607846fa1abb2, type: 3}
+      <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  - <Type>k__BackingField: {fileID: 11400000, guid: 5c617705d2c90c442a7179b4d137c141, type: 2}
+    <Sprite>k__BackingField:
+      <Sprite>k__BackingField: {fileID: 7812780311797803455, guid: 62b3af5b36db8194dbd7d93134743b00, type: 3}
+      <PositionModifier>k__BackingField: {x: -0.07, y: -0.34, z: 0}
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  - <Type>k__BackingField: {fileID: 11400000, guid: 0dd4af956b8efb44eaaba7b9747e8fd0, type: 2}
+    <Sprite>k__BackingField:
+      <Sprite>k__BackingField: {fileID: 9221513366415775618, guid: 33f92b5a7b867d149946153c15f793f6, type: 3}
+      <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  - <Type>k__BackingField: {fileID: 11400000, guid: c8598330d456532498570f65a3274793, type: 2}
+    <Sprite>k__BackingField:
+      <Sprite>k__BackingField: {fileID: 6312074689772737163, guid: 5b36a7304a723c341b954d2890946c27, type: 3}
+      <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  - <Type>k__BackingField: {fileID: 11400000, guid: e58e4fe65d7e6a04095201f08cdd536d, type: 2}
+    <Sprite>k__BackingField:
+      <Sprite>k__BackingField: {fileID: -6892511550376853762, guid: 4290b8c99fb95534c90bb0e36b097efd, type: 3}
+      <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  - <Type>k__BackingField: {fileID: 11400000, guid: 7357f42f9f85f4044ac9c9985cdf0a1e, type: 2}
+    <Sprite>k__BackingField:
+      <Sprite>k__BackingField: {fileID: -2346239719240425101, guid: 4592a5a3ac2a93d45bfd46dda2f0763b, type: 3}
+      <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  - <Type>k__BackingField: {fileID: 11400000, guid: 1a9229d9e1c8c4f4ca26130d9575483f, type: 2}
+    <Sprite>k__BackingField:
+      <Sprite>k__BackingField: {fileID: 2516347584461725762, guid: 8ced0b2b91083ff4a99e9f4164fd3a64, type: 3}
+      <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  - <Type>k__BackingField: {fileID: 11400000, guid: 0b9192aa629c6a84da7308abd40b84b9, type: 2}
+    <Sprite>k__BackingField:
+      <Sprite>k__BackingField: {fileID: 8677694623603111731, guid: 8ced0b2b91083ff4a99e9f4164fd3a64, type: 3}
+      <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  - <Type>k__BackingField: {fileID: 11400000, guid: ca9ddd8fe1b6b3c4ea3cc1f9cdb1abfe, type: 2}
+    <Sprite>k__BackingField:
+      <Sprite>k__BackingField: {fileID: 2696790515268710326, guid: e1617239910e02d41a0f721abeb6e0ae, type: 3}
+      <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  - <Type>k__BackingField: {fileID: 11400000, guid: 7f6a79bdf90935142808edaaeb2efbf3, type: 2}
+    <Sprite>k__BackingField:
+      <Sprite>k__BackingField: {fileID: -4387770994631392078, guid: e1617239910e02d41a0f721abeb6e0ae, type: 3}
+      <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
+    <Color>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
