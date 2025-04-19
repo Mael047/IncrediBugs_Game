@@ -1469,7 +1469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: IncrediBugs
+  m_text: MINDSY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4201f1216905da84f8e3734f33ea8ac6, type: 2}
   m_sharedMaterial: {fileID: -5969501256527021136, guid: 4201f1216905da84f8e3734f33ea8ac6, type: 2}
