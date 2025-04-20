@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fondo_mar_Drop_0: 2452296251571365072
+      fondo_mar_Drop_1: 6050009623184647889
+      fondo_mar_Drop_2: -2091406725838284354
+      fondo_mar_Drop_3: 4639049481727174084
+      fondo_mar_Drop_4: 6737233630306186263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
