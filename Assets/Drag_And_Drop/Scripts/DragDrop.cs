@@ -10,7 +10,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private Vector2 originalPosition;
     private Transform originalParent;
 
-    [Header("Banderas")]
+    [Header("item")]
     public string SelectedFlag;
 
     private void Awake()
@@ -21,7 +21,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     private void Start()
     {
-        Debug.Log("La Bandera Seleccionada es" + SelectedFlag);
+        Debug.Log("El item seleccionado es" + SelectedFlag);
     }
 
     public string GetFlag()

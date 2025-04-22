@@ -6,12 +6,12 @@ public class ItemSlot : MonoBehaviour, IDropHandler
 
     public Points_Flags pointsFlags;
 
-    [Header("Banderas De este Slot")]
+    [Header("Slot")]
     public string FlagInSlot;
 
     private void Start()
     {
-        Debug.Log("La Bandera que debe ir en este slot es " + FlagInSlot);
+        Debug.Log("El Item que va en este Slot es " + FlagInSlot);
     }
 
     public void OnDrop(PointerEventData eventData)

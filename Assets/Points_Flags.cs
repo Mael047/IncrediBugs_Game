@@ -20,7 +20,7 @@ public class Points_Flags : MonoBehaviour
         Debug.Log(Points);  
         if (Points == MaxPoints)
         { 
-            TransicionEscenasUI.Instance.BloqueSalida(SceneManager.GetActiveScene().buildIndex - 1 );
+            TransicionEscenasUI.Instance.BloqueSalida(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
 
