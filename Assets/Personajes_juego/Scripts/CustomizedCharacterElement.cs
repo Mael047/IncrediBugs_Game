@@ -17,12 +17,11 @@ public class CustomizedCharacterElement : MonoBehaviour
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        var customization = _character.Data.FirstOrDefault( d=>d.Type == Type );
+        var customization = _character.Data.FirstOrDefault(d => d.Type == Type );
         if (customization == null) return;
         _spriteRenderer.color = customization.Color;
         _spriteRenderer.sprite = customization.Sprite.Sprite;
         transform.localPosition = customization.Sprite.PositionModifier;
-
     }
 
 }

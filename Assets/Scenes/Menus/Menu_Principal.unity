@@ -1290,6 +1290,10 @@ PrefabInstance:
       propertyPath: tiempoBloqueSalida
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3799063463154165089, guid: 39269b8ea1d31f240995afe571dce302, type: 3}
+      propertyPath: tiempoBloqueEntrada
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4134433877418820872, guid: 39269b8ea1d31f240995afe571dce302, type: 3}
       propertyPath: m_LocalPosition.x
       value: 575.69617

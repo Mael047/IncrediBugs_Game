@@ -3,55 +3,75 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
 using UnityEngine.UIElements;
-using UnityEngine.SceneManagement;
+using TMPro.Examples;
 
-public class Points_Flags : MonoBehaviour
+public class Correct_Answer : MonoBehaviour
 {
+
     public Animator animator;
 
-    [SerializeField] private Canvas canvas;
+    [SerializeField] private Canvas canvasActual;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
 
-    [Header("Indicar la seccion del nivel")] // Ingles - Matematica - Geografia - Musica
-    public string SeccionNivel;
+    [Header("Respuesta Correcta")]
+    public string RespuestaCorrecta;
+
+    [Header("Respuesta de este botón")]
+    public string Respuesta;
+
+    [Header("Proximo Canvas")]
+    public Canvas ProximoCanvas;
 
     [Header("Caracter")]
     public GameObject Caracter;
 
-    private int Points = 0;
-    private int MaxPoints = 0;
+    [Header("Indicar la seccion del nivel")] // Ingles - Matematica - Geografia - Musica
+    public string SeccionNivel;
+
+    [Header("Cambio de Escena?")]
+    public string CambioEscena;
+
+    int puntos = 0;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }
-    void Start()
-    {
-        Points = 0;
-        MaxPoints = GameObject.FindGameObjectsWithTag("Slot").Length;
-        Debug.Log(MaxPoints);
-    }
 
-    public void AddPoint()
+    // Solo es necesario indicar el canvas y los puntos maximos en el boton que sea la respuesta correcta 
+    public void CheckAnswer()
     {
-        Points++;
-        Debug.Log(Points);  
-        if (Points == MaxPoints)
+        
+        if (Respuesta == RespuestaCorrecta)
         {
-            StartCoroutine(Second());
+            Debug.Log("Respuesta Correcta");
+            puntos += 1;
+            if (CambioEscena == "Si")
+            {
+                StartCoroutine(Second());
+            }
+            else if(CambioEscena == "No")
+            {
+                CambiarCanvas();
+                Debug.Log("Puntos" + puntos);
+            }
+        }
+        else
+        {
+            Debug.Log("Respuesta Incorrecta");
         }
     }
 
-    public void HorsePoint()
+    // Indicacion para el nuevo canvas en caso de nuevos niveles
+    private void CambiarCanvas()
     {
-        Points++;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        if (Points == MaxPoints)
-        {
-            SceneManager.LoadScene("Completado");
-        }
+        if (canvasActual != null)
+            canvasActual.gameObject.SetActive(false);
+
+        if (ProximoCanvas != null)
+            ProximoCanvas.gameObject.SetActive(true);
     }
 
     IEnumerator Second()
@@ -85,4 +105,5 @@ public class Points_Flags : MonoBehaviour
             TransicionEscenasUI.Instance.BloqueSalida("Menu_Musica");
         }
     }
+
 }

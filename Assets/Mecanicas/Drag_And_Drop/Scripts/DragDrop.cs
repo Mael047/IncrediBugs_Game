@@ -13,6 +13,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     [Header("item")]
     public string SelectedFlag;
 
+    Transform parentAfterDrag;
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -42,6 +44,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         originalParent = transform.parent;
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
+        parentAfterDrag = transform.parent;
+        transform.SetAsLastSibling();
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -59,6 +63,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         {
             transform.position = originalPosition;
         }
+        transform.SetParent(parentAfterDrag);
     }
 
     public void OnPointerDown(PointerEventData eventData)
