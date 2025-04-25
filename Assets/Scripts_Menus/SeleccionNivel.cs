@@ -7,7 +7,7 @@ public class SeleccionNivel : MonoBehaviour
     
     public void CambiarNivel(string nombreNivel)
     {
-        SceneManager.LoadScene(nombreNivel);
+        TransicionEscenasUI.Instance.BloqueSalida(nombreNivel);
     }
 
     public void CambiarNivel(int numeroNivel)

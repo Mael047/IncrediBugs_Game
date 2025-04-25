@@ -78,5 +78,17 @@ public class TransicionEscenasUI : MonoBehaviour
         });
     }
 
+    public void BloqueSalida(string nombreEscena)
+    {
+        bloqueObject.anchoredPosition = new Vector2(posicionInicialSalida, 0f);
+        // Establece la posición inicial
+        bloqueObject.gameObject.SetActive(true); // Activa el objeto antes de la animación  
+
+        LeanTween.moveX(bloqueObject, 0f, tiempoBloqueSalida).setEase(bloqueEaseSalida).setOnComplete(() =>
+        {
+            SceneManager.LoadScene(nombreEscena);
+        });
+    }
+
 }
 
