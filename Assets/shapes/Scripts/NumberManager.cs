@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 
 public class NumberManager : MonoBehaviour {
-    public List<GameObject> numberGroups; // 1_0, 2_0, 3_0
+    public List<GameObject> numberGroups;
     private int currentIndex = 0;
 
     public DrawTrail drawTrail;
@@ -15,7 +15,7 @@ public class NumberManager : MonoBehaviour {
         currentIndex++;
 
         if (currentIndex >= numberGroups.Count) {
-            Debug.Log("🎉 All numbers completed! 🎉");
+            Debug.Log("números completados");
             return;
         }
 

@@ -9,9 +9,10 @@ public class DrawTrail : MonoBehaviour
 
     public List<Transform> checkpoints;
     private HashSet<Transform> passedCheckpoints = new HashSet<Transform>();
-    public float checkpointRadius = 0.5f; // Detection distance
-
+    public float checkpointRadius = 80f;
     public NumberManager numberManager;
+
+    private bool startedDrawing = false;
 
     void Update()
     {
@@ -52,37 +53,57 @@ public class DrawTrail : MonoBehaviour
         currentLine.positionCount = 1;
         currentLine.SetPosition(0, startPos);
         passedCheckpoints.Clear();
+        startedDrawing = false; // 🆕 reset
     }
 
     void UpdateLine(Vector2 newPos)
     {
-        if (Vector2.Distance(points[points.Count - 1], newPos) > 0.1f)
+        if (Vector2.Distance(points[points.Count - 1], newPos) > 0.05f)
         {
             points.Add(newPos);
             currentLine.positionCount++;
             currentLine.SetPosition(currentLine.positionCount - 1, newPos);
 
+            startedDrawing = true;
+        }
+
+        if (startedDrawing)
+        {
             CheckCheckpoint(newPos);
         }
     }
 
-    void CheckCheckpoint(Vector2 pos)
+    void CheckCheckpoint(Vector2 pos) {
+    foreach (Transform checkpoint in checkpoints)
     {
-        foreach (Transform checkpoint in checkpoints)
+        if (!passedCheckpoints.Contains(checkpoint))
         {
-            if (!passedCheckpoints.Contains(checkpoint))
+            RectTransform rect = checkpoint.GetComponent<RectTransform>();
+            Vector2 checkpointScreenPos = RectTransformUtility.WorldToScreenPoint(Camera.main, rect.position);
+
+            float distance = Vector2.Distance(Input.mousePosition, checkpointScreenPos);
+
+#if !UNITY_EDITOR
+            if (Input.touchCount > 0)
             {
-                if (Vector2.Distance(checkpoint.position, pos) < checkpointRadius)
-                {
-                    passedCheckpoints.Add(checkpoint);
-                }
+                Touch touch = Input.GetTouch(0);
+                distance = Vector2.Distance(touch.position, checkpointScreenPos);
+            }
+#endif
+
+            if (distance < checkpointRadius)
+            {
+                Debug.Log("Checkpoint passed: " + checkpoint.name);
+                passedCheckpoints.Add(checkpoint);
             }
         }
-
-        if (passedCheckpoints.Count == checkpoints.Count)
-        {
-            Debug.Log("Number drawn correctly!");
-            numberManager.NextNumber();
-        }
     }
+
+    if (passedCheckpoints.Count == checkpoints.Count)
+    {
+        Debug.Log("✅ All checkpoints passed!");
+        numberManager.NextNumber();
+    }
+}
+
 }
