@@ -9,9 +9,9 @@ public class DrawTrail : MonoBehaviour
 
     public List<Transform> checkpoints;
     private HashSet<Transform> passedCheckpoints = new HashSet<Transform>();
-    public float checkpointRadius = 0.5f; // how close you need to be
+    public float checkpointRadius = 0.5f; // Detection distance
 
-    public NumberManager numberManager; // reference to manage numbers
+    public NumberManager numberManager;
 
     void Update()
     {
@@ -79,7 +79,6 @@ public class DrawTrail : MonoBehaviour
             }
         }
 
-        // If all checkpoints are passed
         if (passedCheckpoints.Count == checkpoints.Count)
         {
             Debug.Log("Number drawn correctly!");
