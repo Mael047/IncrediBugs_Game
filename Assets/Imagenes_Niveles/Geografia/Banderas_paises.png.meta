@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Banderas_paises_0: 1319034213235314456
+      Banderas_paises_1: -6518439866850665313
+      Banderas_paises_2: -5656284932551081129
+      Banderas_paises_3: 4664814774919017679
+      Banderas_paises_4: -8742779856599919277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
