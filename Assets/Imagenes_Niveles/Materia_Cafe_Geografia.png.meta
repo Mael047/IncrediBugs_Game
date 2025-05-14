@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Materia_Cafe_Geografia_0: 7608577627820332410
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
