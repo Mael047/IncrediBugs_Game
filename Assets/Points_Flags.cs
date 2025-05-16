@@ -19,19 +19,30 @@ public class Points_Flags : MonoBehaviour
     [Header("Caracter")]
     public GameObject Caracter;
 
+    [Header("Canvas Actual")]
+    public Canvas CanvasActual;
+
+    [Header("Proximo Canvas")]
+    public Canvas ProximoCanvas;
+
     private int Points = 0;
     private int MaxPoints = 0;
+    private int MaxPointsItem = 0;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }
+
     void Start()
     {
         Points = 0;
         MaxPoints = GameObject.FindGameObjectsWithTag("Slot").Length;
+        MaxPointsItem = GameObject.FindGameObjectsWithTag("Animal").Length;
+
         Debug.Log(MaxPoints);
+        Debug.Log(MaxPointsItem + "cantidad de animales");
     }
 
     public void AddPoint()
@@ -47,10 +58,10 @@ public class Points_Flags : MonoBehaviour
     public void HorsePoint()
     {
         Points++;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        if (Points == MaxPoints)
+        StartCoroutine(Canvas_Change());
+        if (Points == 2)
         {
-            SceneManager.LoadScene("Completado");
+            StartCoroutine(Second());
         }
     }
 
@@ -68,6 +79,7 @@ public class Points_Flags : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         canvasGroup.alpha = 0f;
         yield return new WaitForSeconds(5f);
+        Debug.Log("Cambiar Canvas" + SeccionNivel);
         if (SeccionNivel == "Ingles")
         {
             TransicionEscenasUI.Instance.BloqueSalida("Menu_Ingles");
@@ -84,5 +96,17 @@ public class Points_Flags : MonoBehaviour
         {
             TransicionEscenasUI.Instance.BloqueSalida("Menu_Musica");
         }
+    }
+
+    IEnumerator Canvas_Change()
+    {
+        yield return new WaitForSeconds(3f);
+
+        if (CanvasActual != null)
+            CanvasActual.gameObject.SetActive(false);
+
+        if (ProximoCanvas != null)
+            ProximoCanvas.gameObject.SetActive(true);
+
     }
 }

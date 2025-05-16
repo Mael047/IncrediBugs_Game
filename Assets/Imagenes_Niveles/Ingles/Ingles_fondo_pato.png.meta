@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2d626d29905a94cf6a1a0ff8229413e0
+guid: 8a0e67ef877ff714594d4b91c43a03e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8430895691888792506
-    second: boton volver verde Final_0
+      213: 3654983620967613352
+    second: Ingles_fondo_pato_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boton volver verde Final_0
+      name: Ingles_fondo_pato_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1747
-        height: 717
+        width: 2400
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64ce89a79017ffa80800000000000000
-      internalID: -8430895691888792506
+      spriteID: 8a345a30d3c19b230800000000000000
+      internalID: 3654983620967613352
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      boton volver verde Final_0: -8430895691888792506
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

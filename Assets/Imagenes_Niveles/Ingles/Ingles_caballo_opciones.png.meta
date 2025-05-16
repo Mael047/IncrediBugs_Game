@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 2d626d29905a94cf6a1a0ff8229413e0
+guid: c73b6f111a951934798e372623627cac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8430895691888792506
-    second: boton volver verde Final_0
+      213: 5106801643717261512
+    second: Ingles_caballo_opciones_0
+  - first:
+      213: 7121413065553779013
+    second: Ingles_caballo_opciones_1
+  - first:
+      213: 7673817851541543661
+    second: Ingles_caballo_opciones_2
+  - first:
+      213: 3876084323304183841
+    second: Ingles_caballo_opciones_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +135,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boton volver verde Final_0
+      name: Ingles_caballo_opciones_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1747
-        height: 717
+        x: 210
+        y: 7
+        width: 564
+        height: 507
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64ce89a79017ffa80800000000000000
-      internalID: -8430895691888792506
+      spriteID: 5499827c37754d260800000000000000
+      internalID: 7121413065553779013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ingles_caballo_opciones_2
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 7
+        width: 564
+        height: 507
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea5f28ada0ee7a60800000000000000
+      internalID: 7673817851541543661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ingles_caballo_opciones_3
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 7
+        width: 564
+        height: 507
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128910ad72e9ac530800000000000000
+      internalID: 3876084323304183841
       vertices: []
       indices: 
       edges: []
@@ -151,7 +204,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4e8cdb43d9abd1144a4d40fd92863c25
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +214,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      boton volver verde Final_0: -8430895691888792506
+      Ingles_caballo_opciones_4: 1503117031
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

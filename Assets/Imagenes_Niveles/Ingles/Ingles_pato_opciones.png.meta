@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 2d626d29905a94cf6a1a0ff8229413e0
+guid: 894282870c393d9448fbe5d194704fba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8430895691888792506
-    second: boton volver verde Final_0
+      213: 38744634363176428
+    second: Ingles_pato_opciones_0
+  - first:
+      213: -5852928433406928998
+    second: Ingles_pato_opciones_1
+  - first:
+      213: -117897733993973147
+    second: Ingles_pato_opciones_2
+  - first:
+      213: -1012496849095146383
+    second: Ingles_pato_opciones_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +135,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boton volver verde Final_0
+      name: Ingles_pato_opciones_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1747
-        height: 717
+        x: 353
+        y: 43
+        width: 448
+        height: 441
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64ce89a79017ffa80800000000000000
-      internalID: -8430895691888792506
+      spriteID: a971ff6999836cea0800000000000000
+      internalID: -5852928433406928998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ingles_pato_opciones_2
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 43
+        width: 448
+        height: 441
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a3775b2a42d5ef0800000000000000
+      internalID: -117897733993973147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ingles_pato_opciones_3
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 43
+        width: 448
+        height: 441
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1744b7dea73e2f1f0800000000000000
+      internalID: -1012496849095146383
       vertices: []
       indices: 
       edges: []
@@ -151,7 +204,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 19cbc6dcdaa820d42b7bbac259cf412d
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +214,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      boton volver verde Final_0: -8430895691888792506
+      Ingles_pato_opciones_1: -5852928433406928998
+      Ingles_pato_opciones_2: -117897733993973147
+      Ingles_pato_opciones_3: -1012496849095146383
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

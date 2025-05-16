@@ -28,6 +28,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
                     eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
                     banderaArrastrada.transform.SetParent(transform);
                     pointsFlags.AddPoint();
+                    pointsFlags.HorsePoint();
 
                 }
                 else if(FlagInSlot != banderaArrastrada.GetFlag()) // En caso de que el item sea incorrecto lo regresa a su posición original

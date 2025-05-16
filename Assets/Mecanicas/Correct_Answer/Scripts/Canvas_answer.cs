@@ -8,7 +8,7 @@ public class Canvas_answer : MonoBehaviour
     [Header("Proximo Canvas")]
     public Canvas ProximoCanvas;
 
-    private void CambiarCanvas()
+    public void CambiarCanvas()
     {
         if (canvasActual != null)
             canvasActual.gameObject.SetActive(false);
