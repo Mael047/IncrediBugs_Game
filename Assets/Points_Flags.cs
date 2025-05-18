@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 using System.Collections;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using TMPro.Examples;
 
 public class Points_Flags : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Points_Flags : MonoBehaviour
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+
+    [SerializeField] private AudioClip sonidoAcabar;
 
     [Header("Indicar la seccion del nivel")] // Ingles - Matematica - Geografia - Musica
     public string SeccionNivel;
@@ -25,9 +28,11 @@ public class Points_Flags : MonoBehaviour
     [Header("Proximo Canvas")]
     public Canvas ProximoCanvas;
 
+    [Header("Nivel de animales")]
+    public int animales = 0; // 0 = false, 1 = true
+
     private int Points = 0;
     private int MaxPoints = 0;
-    private int MaxPointsItem = 0;
 
     private void Awake()
     {
@@ -39,28 +44,28 @@ public class Points_Flags : MonoBehaviour
     {
         Points = 0;
         MaxPoints = GameObject.FindGameObjectsWithTag("Slot").Length;
-        MaxPointsItem = GameObject.FindGameObjectsWithTag("Animal").Length;
 
         Debug.Log(MaxPoints);
-        Debug.Log(MaxPointsItem + "cantidad de animales");
     }
 
     public void AddPoint()
     {
         Points++;
-        Debug.Log(Points);  
+        Debug.Log(Points);
         if (Points == MaxPoints)
         {
             StartCoroutine(Second());
         }
     }
 
+
     public void HorsePoint()
     {
-        Points++;
         StartCoroutine(Canvas_Change());
-        if (Points == 2)
+        if (animales == 1)
         {
+            Points = 2;
+            Debug.Log("Animales Completados");
             StartCoroutine(Second());
         }
     }
@@ -69,6 +74,7 @@ public class Points_Flags : MonoBehaviour
     {
         animator.SetFloat("Felicitacion", 1);
         yield return new WaitForSeconds(3f);
+        ControladorSonido.Instance.EjecutarSonido(sonidoAcabar);
         canvasGroup.alpha = 0.8f;
         yield return new WaitForSeconds(0.1f);
         canvasGroup.alpha = 0.5f;

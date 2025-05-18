@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Audio;
 
 public class ItemSlot : MonoBehaviour, IDropHandler
 {
-
     public Points_Flags pointsFlags;
 
     [Header("Slot")]
     public string FlagInSlot;
+
+    [SerializeField] private AudioClip sonidoCorrecto;
+    [SerializeField] private AudioClip sonidoIncorrecto;
 
     private void Start()
     {
@@ -24,17 +27,20 @@ public class ItemSlot : MonoBehaviour, IDropHandler
             {
                 if (FlagInSlot == banderaArrastrada.GetFlag()) // EN caso de que el item sea correcto ajusta su posición y lo deja en el slot   
                 {
-                    Debug.Log("Correcto");
-                    eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-                    banderaArrastrada.transform.SetParent(transform);
                     pointsFlags.AddPoint();
                     pointsFlags.HorsePoint();
-
+                    Debug.Log("Correcto");
+                    eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+                    banderaArrastrada.transform.SetParent(transform);        
+                    Debug.Log("Reproduciendo sonido correcto");
+                    ControladorSonido.Instance.EjecutarSonido(sonidoCorrecto);
+                    
                 }
-                else if(FlagInSlot != banderaArrastrada.GetFlag()) // En caso de que el item sea incorrecto lo regresa a su posición original
+                else if(FlagInSlot != banderaArrastrada.GetFlag()) 
                 {
                     Debug.Log("Incorrecto");
                     banderaArrastrada.ReturnToOriginalPosition();
+                    ControladorSonido.Instance.EjecutarSonido(sonidoIncorrecto);
                 }
             }
         }

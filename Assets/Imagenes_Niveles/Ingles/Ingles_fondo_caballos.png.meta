@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ingles_fondo_caballos_0: 5793106622269335540
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
