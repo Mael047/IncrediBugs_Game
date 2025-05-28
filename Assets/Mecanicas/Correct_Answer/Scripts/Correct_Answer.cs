@@ -2,29 +2,21 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
-using UnityEngine.UIElements;
-using TMPro.Examples;
+using TMPro;
 
 public class Correct_Answer : MonoBehaviour
 {
-
     public Animator animator;
+
+    [Header("Caracter")]
+    public GameObject Caracter;
 
     [SerializeField] private Canvas canvasActual;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
 
-    [Header("Respuesta Correcta")]
-    public string RespuestaCorrecta;
-
-    [Header("Respuesta de este botón")]
-    public string Respuesta;
-
     [Header("Proximo Canvas")]
     public Canvas ProximoCanvas;
-
-    [Header("Caracter")]
-    public GameObject Caracter;
 
     [Header("Indicar la seccion del nivel")] // Ingles - Matematica - Geografia - Musica
     public string SeccionNivel;
@@ -32,7 +24,12 @@ public class Correct_Answer : MonoBehaviour
     [Header("Cambio de Escena?")]
     public string CambioEscena;
 
-    int puntos = 0;
+    [Header("Boton correcto")]
+    public Button botonCorrecto;
+
+    [SerializeField] private AudioClip sonidoCorrecto;
+    [SerializeField] private AudioClip sonidoIncorrecto;
+    [SerializeField] private AudioClip sonidoAcabar;
 
     private void Awake()
     {
@@ -40,31 +37,31 @@ public class Correct_Answer : MonoBehaviour
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
-    // Solo es necesario indicar el canvas y los puntos maximos en el boton que sea la respuesta correcta 
-    public void CheckAnswer()
+    /// <param name="botonPresionado">Botón que se ha presionado</param>
+    public void CheckAnswer(Button botonPresionado)
     {
-        
-        if (Respuesta == RespuestaCorrecta)
+        if (botonPresionado == botonCorrecto)
         {
             Debug.Log("Respuesta Correcta");
-            puntos += 1;
+            ControladorSonido.Instance.EjecutarSonido(sonidoCorrecto);
             if (CambioEscena == "Si")
             {
+                canvasGroup.blocksRaycasts = false;
                 StartCoroutine(Second());
             }
-            else if(CambioEscena == "No")
+            else if (CambioEscena == "No")
             {
                 CambiarCanvas();
-                Debug.Log("Puntos" + puntos);
+                Debug.Log("Puntos");
             }
         }
         else
         {
+            ControladorSonido.Instance.EjecutarSonido(sonidoIncorrecto);
             Debug.Log("Respuesta Incorrecta");
         }
     }
 
-    // Indicacion para el nuevo canvas en caso de nuevos niveles
     private void CambiarCanvas()
     {
         if (canvasActual != null)
@@ -78,6 +75,7 @@ public class Correct_Answer : MonoBehaviour
     {
         animator.SetFloat("Felicitacion", 1);
         yield return new WaitForSeconds(3f);
+        ControladorSonido.Instance.EjecutarSonido(sonidoAcabar);
         canvasGroup.alpha = 0.8f;
         yield return new WaitForSeconds(0.1f);
         canvasGroup.alpha = 0.5f;
@@ -88,22 +86,21 @@ public class Correct_Answer : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         canvasGroup.alpha = 0f;
         yield return new WaitForSeconds(5f);
-        if (SeccionNivel == "Ingles")
+
+        switch (SeccionNivel)
         {
-            TransicionEscenasUI.Instance.BloqueSalida("Menu_Ingles");
-        }
-        else if (SeccionNivel == "Matematica")
-        {
-            TransicionEscenasUI.Instance.BloqueSalida("Menu_Math");
-        }
-        else if (SeccionNivel == "Geografia")
-        {
-            TransicionEscenasUI.Instance.BloqueSalida("Menu_Geografia");
-        }
-        else if (SeccionNivel == "Musica")
-        {
-            TransicionEscenasUI.Instance.BloqueSalida("Menu_Musica");
+            case "Ingles":
+                TransicionEscenasUI.Instance.BloqueSalida("Menu_Ingles");
+                break;
+            case "Matematica":
+                TransicionEscenasUI.Instance.BloqueSalida("Menu_Math");
+                break;
+            case "Geografia":
+                TransicionEscenasUI.Instance.BloqueSalida("Menu_Geografia");
+                break;
+            case "Musica":
+                TransicionEscenasUI.Instance.BloqueSalida("Menu_Musica");
+                break;
         }
     }
-
 }

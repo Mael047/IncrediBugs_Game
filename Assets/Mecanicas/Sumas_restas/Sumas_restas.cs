@@ -74,7 +74,7 @@ public class Sumas_restas : MonoBehaviour
             {
                 do
                 {
-                    answer = Random.Range(0, 20); // 0 incluido
+                    answer = Random.Range(0, 20); 
                 } while (answer == correctAnswer);
             }
 
