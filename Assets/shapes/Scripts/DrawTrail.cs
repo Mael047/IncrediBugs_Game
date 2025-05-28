@@ -7,8 +7,13 @@ public class DrawTrail : MonoBehaviour {
     private List<Vector2> points = new List<Vector2>();
     private List<LineRenderer> activeLines = new List<LineRenderer>();
 
+    public bool canDraw = true;
+
 
     void Update() {
+        if(!canDraw) return;
+
+
 #if UNITY_EDITOR || UNITY_STANDALONE
         if (Input.GetMouseButtonDown(0)) {
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);

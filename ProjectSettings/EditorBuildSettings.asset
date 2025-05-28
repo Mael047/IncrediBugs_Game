@@ -47,6 +47,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveles_Mate/Nivel_Seleccion.unity
     guid: 554ac041508a67545913b77f3d6cbf40
+  - enabled: 1
+    path: Assets/shapes/Scenes/TracingShapes.unity
+    guid: 86e837c49ae87294a9086cb177a0b644
+  - enabled: 1
+    path: Assets/piano_mini_game/Scenes/song_minigame.unity
+    guid: 7260e5c4db013a545920421f4700b65a
+  - enabled: 1
+    path: Assets/piano_mini_game/Scenes/piano_mini_game.unity
+    guid: b562bf7d31cc7db418db2e3142267369
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 2d599a9edae5f614a940e8308f92d03d, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 65b13ba5b7d79e1428d36b335d492dc0, type: 2}
