@@ -1564,7 +1564,7 @@ MonoBehaviour:
   SeccionNivel: Ingles
   CambioEscena: Si
   botonCorrecto: {fileID: 1550987021}
-  sonidoCorrecto: {fileID: 8300000, guid: 0cf25fa4fa79844ce823d8d87ca69fbf, type: 3}
+  sonidoCorrecto: {fileID: 8300000, guid: f8dc984b28f63435caff11761928bd46, type: 3}
   sonidoIncorrecto: {fileID: 8300000, guid: dd27f9105c3a84ea39b37b259c95acd4, type: 3}
   sonidoAcabar: {fileID: 8300000, guid: 584669549bffa4fdea74f2fb8f027d8c, type: 3}
 --- !u!114 &907125590
@@ -2025,7 +2025,7 @@ MonoBehaviour:
   SeccionNivel: 
   CambioEscena: No
   botonCorrecto: {fileID: 863061227}
-  sonidoCorrecto: {fileID: 8300000, guid: 0cf25fa4fa79844ce823d8d87ca69fbf, type: 3}
+  sonidoCorrecto: {fileID: 8300000, guid: 07f515418abe343828b88fa6322cd936, type: 3}
   sonidoIncorrecto: {fileID: 8300000, guid: dd27f9105c3a84ea39b37b259c95acd4, type: 3}
   sonidoAcabar: {fileID: 0}
 --- !u!114 &1184265403
@@ -3671,7 +3671,7 @@ MonoBehaviour:
   SeccionNivel: Ingles
   CambioEscena: No
   botonCorrecto: {fileID: 746211637}
-  sonidoCorrecto: {fileID: 8300000, guid: 0cf25fa4fa79844ce823d8d87ca69fbf, type: 3}
+  sonidoCorrecto: {fileID: 8300000, guid: 00df6a06c7f2f40a9b3e3d248d77ec4f, type: 3}
   sonidoIncorrecto: {fileID: 8300000, guid: dd27f9105c3a84ea39b37b259c95acd4, type: 3}
   sonidoAcabar: {fileID: 0}
 --- !u!114 &1975595593
