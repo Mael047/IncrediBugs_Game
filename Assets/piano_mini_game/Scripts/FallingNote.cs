@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FallingNote : MonoBehaviour{
+public class FallingNote : MonoBehaviour {
     public string note;
     public float duration;
     public float fallSpeed = 200f;

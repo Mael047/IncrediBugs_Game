@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PianoKey : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
+public class PianoKey : MonoBehaviour, IPointerDownHandler {
     public string noteName;
     public AudioClip noteSound;
     public PianoMiniGame game;
@@ -11,18 +11,15 @@ public class PianoKey : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
     private void Start() {
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.clip = noteSound;
-        audioSource.loop = true;
+        audioSource.loop = false;
     }
 
     public void OnPointerDown(PointerEventData eventData) {
+        audioSource.Stop();
         audioSource.Play();
         if (game != null)
         {
             game.CheckAnswer(noteName);
         }
-    }
-
-    public void OnPointerUp(PointerEventData eventData) {
-        audioSource.Stop();
     }
 }
