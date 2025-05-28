@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6740354123397291146}
   - component: {fileID: 2421337583156704363}
   m_Layer: 5
-  m_Name: NoteTile
+  m_Name: LongNoteTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -522, y: 555.17334}
-  m_SizeDelta: {x: 160, y: 155.4889}
+  m_AnchoredPosition: {x: -522, y: 503.8946}
+  m_SizeDelta: {x: 160, y: 258.0463}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4401064448093930519
 CanvasRenderer:
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8685485137496353075, guid: f41c022e7bdb248ae8b457078804d734, type: 3}
+  m_Sprite: {fileID: 5022850428156743720, guid: c4fa8a156a363440d89a9d5f541a79b7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -91,3 +91,5 @@ MonoBehaviour:
   note: 
   duration: 0
   fallSpeed: 300
+  shortNoteSprite: {fileID: 0}
+  longNoteSprite: {fileID: 0}

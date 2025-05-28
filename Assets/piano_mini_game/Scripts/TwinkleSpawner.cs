@@ -5,6 +5,9 @@ public class TwinkleSpawner : MonoBehaviour {
     public GameObject notePrefab;
     public RectTransform spawnArea;
 
+    public Sprite shortNoteSprite;
+    public Sprite longNoteSprite;
+
     [System.Serializable]
     public class NoteData {
         public string note;
@@ -35,8 +38,11 @@ public class TwinkleSpawner : MonoBehaviour {
 
     void SpawnNote(NoteData noteData) {
         GameObject go = Instantiate(notePrefab, spawnArea);
-        go.GetComponent<FallingNote>().note = noteData.note;
-        go.GetComponent<FallingNote>().duration = noteData.duration;
+        var noteScript = go.GetComponent<FallingNote>();
+        noteScript.note = noteData.note;
+        noteScript.duration = noteData.duration;
+        noteScript.shortNoteSprite = shortNoteSprite;
+        noteScript.longNoteSprite = longNoteSprite;
 
         RectTransform rt = go.GetComponent<RectTransform>();
         rt.anchoredPosition = new Vector2(GetXPosition(noteData.note), 600f);
