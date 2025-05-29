@@ -56,6 +56,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/piano_mini_game/Scenes/piano_mini_game.unity
     guid: b562bf7d31cc7db418db2e3142267369
+  - enabled: 1
+    path: Assets/piano_mini_game/Scenes/free_piano.unity
+    guid: 6ed8078db3babba43a079ab2e3a8993d
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 2d599a9edae5f614a940e8308f92d03d, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 65b13ba5b7d79e1428d36b335d492dc0, type: 2}

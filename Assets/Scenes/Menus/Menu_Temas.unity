@@ -2639,7 +2639,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Matem\xE1tica"
+  m_text: "Matem\xE1ticas"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5678533526d23074094987f169085d3e, type: 2}
   m_sharedMaterial: {fileID: -443704134127425343, guid: 5678533526d23074094987f169085d3e, type: 2}
@@ -2666,8 +2666,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.7
-  m_fontSizeBase: 12.7
+  m_fontSize: 11
+  m_fontSizeBase: 11
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
