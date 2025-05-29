@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tema_matematica_0: 323728156069372821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

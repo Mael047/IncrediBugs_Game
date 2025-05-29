@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bcd2d1f09477f2444be0987b136f54f7
+guid: a348260c49d239947abd811ae5bab713
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5819199250204020786
-    second: music_materia_0
+      213: 5630829965607018357
+    second: FELICITACION_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,12 +126,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: music_materia_0
+      name: FELICITACION_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1080
+        width: 2400
         height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecfae560d1d0e3fa0800000000000000
-      internalID: -5819199250204020786
+      spriteID: 57f91a2350ab42e40800000000000000
+      internalID: 5630829965607018357
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      music_materia_0: -5819199250204020786
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

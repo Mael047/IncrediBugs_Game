@@ -1,14 +1,12 @@
 # ninja log v5
-8	1467	7673100350501955	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	70dac934c9386ed8
-81	343	7673100339255080	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	4513df2d1405bae3
-343	595	7673100341700018	C:/Users/Joan Moreno/Documents/Incredibugs_Project/IncrediBugs_Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6h5zf03p/obj/arm64-v8a/libswappywrapper.so	2d907bff36dd7645
-49	1178	7673100347624421	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	741949885f394982
-40	1109	7673100346877123	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	3de7e6682a2ed732
-16	1123	7673100347083793	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	4acc1c3baa105ad
-70	1202	7673100347870199	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	a57923d7f9d9aa73
-58	1131	7673100347139798	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	ed82d1db77bfd683
-23	1248	7673100348294531	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	ee1b3003ae6f94b1
-32	1365	7673100349503975	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	3eebf6c23f0b6183
-1467	1601	7673100351890307	C:/Users/Joan Moreno/Documents/Incredibugs_Project/IncrediBugs_Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6h5zf03p/obj/arm64-v8a/libgame.so	3f82942cfda4a590
-7	253	7673162825822325	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	4513df2d1405bae3
-254	450	7673162827800265	C:/Users/Joan Moreno/Documents/Incredibugs_Project/IncrediBugs_Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6h5zf03p/obj/arm64-v8a/libswappywrapper.so	2d907bff36dd7645
+46	370	7702243959942523	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	4513df2d1405bae3
+371	573	7702243961984466	C:/Users/Joan Moreno/Documents/Incredibugs_Project/IncrediBugs_Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6h5zf03p/obj/arm64-v8a/libswappywrapper.so	2d907bff36dd7645
+22	1257	7702243968736685	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	3de7e6682a2ed732
+0	1283	7702243969022620	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	4acc1c3baa105ad
+39	1308	7702243969274303	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	ed82d1db77bfd683
+27	1372	7702243969896084	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	741949885f394982
+33	1376	7702243969952276	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	a57923d7f9d9aa73
+6	1451	7702243970711086	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	ee1b3003ae6f94b1
+17	1600	7702243972234507	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	3eebf6c23f0b6183
+12	1696	7702243973188499	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	70dac934c9386ed8
+1696	1818	7702243974457689	C:/Users/Joan Moreno/Documents/Incredibugs_Project/IncrediBugs_Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6h5zf03p/obj/arm64-v8a/libgame.so	3f82942cfda4a590
