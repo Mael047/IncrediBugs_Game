@@ -8,14 +8,11 @@ public class TracingManager : MonoBehaviour {
     public int totalCheckpoints = 4;
     private int currentNumberIndex = 0;
 
-    [SerializeField]private AudioClip sonidoNumero1;
+    [SerializeField] private AudioClip sonidoNumero1;
     [SerializeField] private AudioClip sonidoNumero2;
     [SerializeField] private AudioClip sonidoNumero3;
 
-
     private Pantalla_Felicitacion pantalla;
-
-
 
     private void Awake()
     {
@@ -35,6 +32,7 @@ public class TracingManager : MonoBehaviour {
                 StartCoroutine(TransitionToNextNumber());
             }
         }
+        
         else {
             Debug.Log("ese no es");
         }
